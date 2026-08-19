@@ -33,7 +33,7 @@ export default function App(){
 
       </TouchableOpacity>
 
-      {list.map((product, index) => <Text key={index}>{product}</Text>)}
+      {list.map((product, index) => <Text key={index} style={styles.products}>{product}</Text>)}
 
     </View>
 
@@ -45,4 +45,26 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 60
   },
+  input : {
+    borderWidth: 1,
+    borderColor: 'black',
+    padding: 1,
+    marginBottom: 30
+  },
+  button : {
+    backgroundColor: 'black',
+    padding: 10,
+    borderRadius: 5,
+    alignItems: 'center'
+    
+  },
+  buttonText : {
+    color: 'white',
+    fontFamily: 'Calibri',
+  },
+  products : {
+    fontSize: 25,
+    paddingVertical: 3,
+    borderBottomWidth: 2
+  }
 });
